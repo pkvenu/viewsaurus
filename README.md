@@ -4,13 +4,6 @@ Viewsaurus helps you create awesome code walkthroughs for your open source proje
 
 # Authoring Tutorials with Viewsaurus
 
-Recently I've been writing a few tutorials for
-[Twilio](https://www.twilio.com/), so far it was a pleasant experience. It's
-always fun to play with a nice API in the languages you like, right?
-
-The tool we're using to write these tutorials made our work easy. I enjoyed
-working with **viewsaurus**.
-
 If you have to use this [viewsaurus](https://www.npmjs.com/package/viewsaurus),
 here are the instructions to set it up.
 
