@@ -1,0 +1,69 @@
+.saurus-code {
+  position:absolute;
+  top:0;
+  left:@proseWidth;
+  bottom:0;
+  right:0;
+  box-sizing: border-box;
+  border-right:1px solid @darkgrey;
+  background-color: @black;
+
+  .dark-scrollbars();
+
+  .file-path {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:25px;
+    background-color:@black;
+    color:@darkgrey;
+    font-size:14px;
+
+    i {
+      margin:5px 10px;
+      float:right;
+      cursor:pointer;
+      color:@darkgrey;
+      display:block;
+    }
+
+    i:hover {
+      color:lighten(@darkgrey, 10%);
+    }
+
+    .crumb-container {
+      display:block;
+      float:left;
+      margin:4px 40px 4px 10px;
+    }
+
+    .crumb-container span:last-child {
+      color:@yellow;
+    }
+  }
+
+  .saurus-editor {
+    position:absolute;
+    top:25px;
+    left:0;
+    right:0;
+    bottom:0;
+    border-top:1px solid @darkgrey;
+  }
+
+  .ace_scroller {
+    bottom:8px;
+    right:8px;
+  }
+
+  .ace_inactive, .ace_inactive span  {
+    color:@grey;
+    color:rgba(100,100,100,.2) !important;
+    text-shadow:0 0 3px @lightgrey;
+  }
+  // Do not remove. In conflict with the twilio nav bar.
+  .ace_scrollbar {
+    z-index: 4 !important;
+  }
+}

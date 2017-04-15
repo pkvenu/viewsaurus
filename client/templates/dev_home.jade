@@ -1,0 +1,26 @@
+doctype html
+head
+  title Viewsaurus Dev Harness
+  style.
+    html, body {
+      font-family:"Helvetica Neue", Helvetica, sans-serif;
+      background-color:#be2625;
+    }
+
+    #container {
+      margin:10px auto;
+      padding:10px;
+      width:600px;
+      background-color:#ffffff;
+      border:1px solid #cdcdcd;
+    }
+
+    a, a:visited {
+      color:#be2625;
+    }
+body
+  #container
+    h1 Viewsaurus Test Fixtures
+    each fixture in fixtures
+      p
+        a(href='/tests/'+fixture)= fixture

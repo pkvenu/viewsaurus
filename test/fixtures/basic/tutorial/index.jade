@@ -1,0 +1,74 @@
+// First tutorial chapter
+.chapter(data-title='Chapter One')
+  .step(data-title='Step One', data-file='long.rb', 
+    data-highlight='100-120,140')
+    include:markdown one.md
+
+  .step(data-title='Step One Point One')
+    include:markdown one.md
+
+  .step(data-file='app.rb', data-highlight='1-3,5,10')
+    h4 Hey this is a step title from a tag
+    :markdown
+      ```javascript
+      var foo = 'bar';
+      var butts = {
+          yo: 'dawg'
+      };
+      ```
+
+      This is `inline code`.
+
+      * here's a list
+      * `inline code` in the list
+
+// Second tutorial chapter
+.chapter(data-title='Chapter Two')
+
+  //- Step one
+  .step(data-title='Step One: Livin La Vida Loca. Her Lips are devil red and skin is the color mocha', 
+    data-file='views/another.erb', data-highlight="20-30")
+    h1 yo dawg
+    p.
+      this is some content that I am writing in Jade
+    img(src='/twilio-cats.gif')
+
+    include:markdown one.md
+
+  // Include external Jade
+  include two.jade
+
+// Third tutorial chapter
+.chapter(data-title='Chapter Three')
+
+  // Step Three
+  .step(data-file='app.rb', data-highlight='1-3,5,10')
+    :markdown
+      ## This is a step I am authoring in markdown
+
+      pretty neat huh?
+
+  // Step two 
+  .step(data-title='Step Two', data-file='app.rb')
+    :markdown
+      # Step Two
+
+      pretty neat eh?
+
+  .step(data-title='Step Three', data-file='public/foo.html')
+    :markdown
+      # Step Three
+
+      pretty neat eh?
+
+  .step(data-title='Step Four', data-file='public/foo.js')
+    :markdown
+      # Step Four
+
+      pretty neat eh?
+
+  .step(data-title='Swift File', data-file='ViewController.swift', data-mode="swift")
+    :markdown
+      # Step Four
+
+      can we highlight swift?

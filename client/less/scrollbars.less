@@ -1,0 +1,47 @@
+.scrollbar-width() {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius:2px;
+  }
+}
+
+.light-scrollbars() {
+  .scrollbar-width();
+
+  // Webkit browsers   
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner, ::-webkit-scrollbar-resizer {
+    background-color:@offwhite;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background-color:darken(@offwhite,20%);
+  }
+
+  // IE
+  scrollbar-base-color: @beige;
+  scrollbar-highlight-color: @beige;
+  scrollbar-track-color: @white;
+  scrollbar-arrow-color: @beige;
+  scrollbar-shadow-color: @white;
+}
+
+.dark-scrollbars() {
+  .scrollbar-width();
+
+  // Webkit browsers
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner, ::-webkit-scrollbar-resizer {
+    background-color:@black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color:@darkgrey;
+  }
+
+  // IE
+  scrollbar-base-color: @darkgrey;
+  scrollbar-highlight-color: @darkgrey;
+  scrollbar-track-color: @black;
+  scrollbar-arrow-color: @darkgrey;
+  scrollbar-shadow-color: @black;
+}

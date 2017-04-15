@@ -1,0 +1,58 @@
+.saurus-explorer {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:-@explorerWidth;
+  width:@explorerWidth;
+  background-color: @black;
+  color:@offwhite;
+  overflow-y:auto;
+  overflow-x:hidden;
+  font-size:14px !important;
+
+  .saurus-file-list {
+    .current {
+      color: @yellow;
+    }
+
+    .current:hover {
+      color: @yellow;
+    }
+
+    ul {
+      margin:0;
+      padding:0;
+      list-style: none;
+
+      li {
+        margin:10px;
+        padding:0;
+        color:@offwhite;
+        font-size:14px !important;
+
+        ul li {
+          margin-left:20px;
+          color:@offwhite;
+          font-size:14px !important;
+        }
+      }
+
+      li[data-file] {
+        cursor:pointer;
+      }
+
+      li[data-file]:hover:not(.current) {
+        color:@white;
+      }
+    }
+  }
+  a.explorer-get-code {
+    i {
+      margin-right:5px;
+    }
+    margin: 30px 10px;
+    display: block;
+    color: white;
+    font-style: italic;
+  }
+}

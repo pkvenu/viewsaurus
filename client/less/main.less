@@ -1,0 +1,79 @@
+// z-index
+@zindex-back: 999;
+@zindex-mid: 1010;
+@zindex-top: 1020;
+@zindex-overlay: 1030;
+
+// Primary Theme Colors
+@red: #e12127;
+@darkRed: #971d1f;
+@blue: #31d0e7;
+@black: #231f20;
+@grey: #2c2c2a;
+@white: #ffffff;
+@beige: #daddd6;
+@brown: #b1aca0;
+@yellow: #fffe9f;
+@lightgrey: #c1c6ba;
+@darkgrey: #808184;
+@offwhite: #DADDD6;
+@lightblue: #27A9E1;
+@darkblue: #35404E;
+
+// Viewsaurus specific colors
+@editor: #272822;
+@controlBar: #D0F0ED;
+@progressBar: #71BBBA;
+@startButton: #56C4C3;
+@yellow: #D1C626;
+
+// Fonts
+@sans-serif: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Key sizing values
+@proseWidth: 30%;
+@codeWidth: 70%;
+@titleHeight: 22px;
+@explorerWidth: 270px;
+
+// Lightbox 
+@import "featherlight.less";
+
+#viewsaurus {
+  // Normalize.css reset
+  @import "reset.less";
+  // Inline syntax highlighter monokai theme
+  @import "monokai.less";
+  // Scrollbar mixins
+  @import "scrollbars.less";
+  // Default dark scrollbars
+  .dark-scrollbars();
+
+  .highlighted div:not(.active) span {
+    color: @grey !important;
+    color: rgba(100,100,100,0.5) !important;
+    text-shadow: 0px 0px 3px @grey !important;
+  }
+
+  position:relative;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-color:@white;
+  font-family:@sans-serif;
+
+  .saurus-panes {
+    position:relative;
+    height:100%;
+    width:100%;
+  }
+
+  .hidden {
+    display:none;
+  }
+
+  // Sub view less files
+  @import "prose_view.less";
+  @import "code_view.less";
+  @import "explorer_view.less";
+}

@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title || 'Viewsaurus Tutorial'
+    style.
+      body, html {
+        height:100%;
+        width:100%;
+        padding:0;
+        margin:0;
+        overflow:hidden;
+        background-color:#ddd;
+      }
+      .wrapper {
+        height:100%;
+        width:100%;
+      }
+    link(rel='shortcut icon', 
+      href='https://developers.ringcentral.com/assets/images/favicon.ico?v=20161209-1544')
+    link(rel='apple-touch-icon', 
+      href='https://developers.ringcentral.com/assets/images/favicon.ico?v=20161209-1544')
+    link(rel='apple-touch-icon', sizes='72x72', 
+      href='https://developers.ringcentral.com/assets/images/favicon.ico?v=20161209-1544')
+    link(rel='apple-touch-icon' sizes='114x114' 
+      href='https://developers.ringcentral.com/assets/images/favicon.ico?v=20161209-1544')
+    link(rel='stylesheet',
+      href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+    if inline
+      style!= css
+    else
+      link(rel='stylesheet', href='viewsaurus.css')
+  body
+    .wrapper!= viewsaurusContent
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js')
+    script(src='ace/ace.js')
+    script(src='ace/theme-monokai.js')
+    if inline
+      script!= javascript
+    else
+      script(src='viewsaurus.js')

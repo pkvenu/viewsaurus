@@ -1,0 +1,34 @@
+.saurus-prose
+  .saurus-prose-header
+    .title-outer
+      span.step-title= title
+
+  .saurus-nav-buttons
+    .saurus-nav-button.nav-overview
+      .saurus-nav-button-inner
+        i.fa.fa-fw.fa-list
+      .nav-divider
+    .saurus-nav-button.nav-previous
+      .saurus-nav-button-inner
+        a(href='') 
+          i.fa.fa-fw.fa-play.fa-rotate-180
+      .nav-divider
+    .saurus-nav-button.nav-next.clickable
+      .saurus-nav-button-inner
+        a(href='#1') 
+          i.fa.fa-fw.fa-play
+    .saurus-next-title
+      span.next-title-inner
+
+  .saurus-progress-bar
+
+  .saurus-start
+    p= description
+    a(href="#0") Start Tutorial
+
+  //- Pre-generated tutorial content
+  .saurus-content!= content
+
+  //- Generated overview content
+  .saurus-overview
+    ul

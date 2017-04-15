@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "viewsaurus",
+        "scope": null,
+        "escapedName": "viewsaurus",
+        "name": "viewsaurus",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/pawan.venugopal/Documents/dev/pkvenu.github.io"
+    ]
+  ],
+  "_from": "viewsaurus@latest",
+  "_id": "viewsaurus@0.4.0",
+  "_inCache": true,
+  "_location": "/viewsaurus",
+  "_nodeVersion": "5.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/viewsaurus-0.4.0.tgz_1460393302245_0.1626430165488273"
+  },
+  "_npmUser": {
+    "name": "kwhinnery",
+    "email": "kevin.whinnery@gmail.com"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "viewsaurus",
+    "scope": null,
+    "escapedName": "viewsaurus",
+    "name": "viewsaurus",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/viewsaurus/-/viewsaurus-0.4.0.tgz",
+  "_shasum": "57e716d55992f1eb9a0a710b189d8c003a81f11f",
+  "_shrinkwrap": null,
+  "_spec": "viewsaurus",
+  "_where": "/Users/pawan.venugopal/Documents/dev/pkvenu.github.io",
+  "author": {
+    "name": "Twilio Developer Education"
+  },
+  "bin": {
+    "saurus": "./bin/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/TwilioDevEd/viewsaurus/issues"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "backbone": "^1.1.2",
+    "browserify": "^9.0.3",
+    "cheerio": "^0.18.0",
+    "clean-css": "^2.2.19",
+    "codemirror": "^5.0.0",
+    "colors": "^1.0.3",
+    "express": "^4.12.3",
+    "html": "0.0.9",
+    "jade": "^1.9.2",
+    "joi": "^5.0.1",
+    "less": "^1.7.5",
+    "lodash": "^2.4.1",
+    "nomnom": "^1.8.1",
+    "supermarked": "^2.0.0",
+    "uglify-js": "^2.4.15",
+    "underscore": "^1.7.0",
+    "watch": "^0.13.0",
+    "wrench": "^1.5.8"
+  },
+  "description": "Create tutorials for code projects. It's like \"view source\", but 84% more awesome.",
+  "devDependencies": {
+    "faucet": "*",
+    "tape": "^3.0.0"
+  },
+  "dist": {
+    "shasum": "57e716d55992f1eb9a0a710b189d8c003a81f11f",
+    "tarball": "http://registry.npmjs.org/viewsaurus/-/viewsaurus-0.4.0.tgz"
+  },
+  "gitHead": "3a633bf3e94b98c315dd8c39cac55513e9560500",
+  "homepage": "https://github.com/TwilioDevEd/viewsaurus",
+  "keywords": [
+    "tutorials",
+    "code",
+    "walkthroughs",
+    "documentation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "kwhinnery",
+      "email": "kevin.whinnery@gmail.com"
+    }
+  ],
+  "name": "viewsaurus",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwilioDevEd/viewsaurus.git"
+  },
+  "scripts": {
+    "test": "tape test | faucet"
+  },
+  "version": "0.4.0"
+}
